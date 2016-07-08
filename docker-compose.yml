@@ -1,0 +1,8 @@
+web:
+    build: .
+    ports:
+        - "80:80"
+    environment:
+        MAP_DIR: '/usr/share/nginx/html/'
+    # volumes:
+    #     - "/c/User/rpcan/project/docker-mincraft-web/static/:/usr/share/nginx/html/"
