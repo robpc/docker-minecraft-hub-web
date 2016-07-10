@@ -5,6 +5,11 @@ server {
     server_name  _;
     root         /usr/share/nginx/html;
 
+    location /elb-status {
+        access_log off;
+        return 200;
+    }
+
     location /map/ {
         alias ${MAP_DIR};
     }
